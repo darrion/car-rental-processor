@@ -15,6 +15,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Validated
 public class Car {
+
     @NotNull(message = ErrorConstants.NULL_VIN_NUMBER) 
     String vin; 
     @NotNull(message = ErrorConstants.NULL_LICENSE_PLATE)

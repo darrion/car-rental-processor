@@ -1,7 +1,6 @@
 package com.example.carrentalprocessor.controller;
 
 import javax.validation.Valid;
-import javax.validation.constraints.Size;
 
 import com.example.carrentalprocessor.model.Car;
 import com.example.carrentalprocessor.service.CarRentalService;
@@ -30,6 +29,7 @@ public class CarRentalController {
         @Valid @RequestBody Car car
     ) 
     {
+        carRentalService.postCar(car);
         return ResponseEntity.ok(car); 
     }
 
