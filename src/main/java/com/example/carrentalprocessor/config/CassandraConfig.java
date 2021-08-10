@@ -1,17 +1,12 @@
 package com.example.carrentalprocessor.config;
 
-import java.util.List;
-
 import com.datastax.oss.driver.api.core.CqlSession;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.cassandra.config.CqlSessionFactoryBean;
 import org.springframework.data.cassandra.config.SchemaAction;
 import org.springframework.data.cassandra.config.SessionFactoryFactoryBean;
-import org.springframework.data.cassandra.core.CassandraOperations;
-import org.springframework.data.cassandra.core.CassandraTemplate;
 import org.springframework.data.cassandra.core.convert.CassandraConverter;
 import org.springframework.data.cassandra.core.convert.MappingCassandraConverter;
 import org.springframework.data.cassandra.core.mapping.CassandraMappingContext;

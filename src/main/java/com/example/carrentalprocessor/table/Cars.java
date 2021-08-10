@@ -1,15 +1,13 @@
-package com.example.carrentalprocessor.table; 
+package com.example.carrentalprocessor.table;
 
-import java.math.BigInteger;
-import java.sql.Date;
-import java.time.Instant;
-import java.time.LocalDate;
-
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
-import lombok.Getter;
-import lombok.Setter;
+
+import java.math.BigInteger;
+import java.time.LocalDate;
 
 @Getter
 @Setter

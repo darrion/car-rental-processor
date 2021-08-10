@@ -1,15 +1,13 @@
 package com.example.carrentalprocessor.service;
 
-import com.example.carrentalprocessor.table.Cars;
-
-import java.text.ParseException;
-
 import com.example.carrentalprocessor.factory.CarFactory;
 import com.example.carrentalprocessor.model.Car;
 import com.example.carrentalprocessor.repository.CarRepository;
-
+import com.example.carrentalprocessor.table.Cars;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.text.ParseException;
 
 @Service
 public class CarRentalService {
@@ -17,7 +15,7 @@ public class CarRentalService {
     @Autowired
     CarRepository carRepository; 
 
-    public void postCar(Car car) {
+    public void saveCar(Car car) {
         Cars carTable;
         try {
             carTable = CarFactory.convert(car);
@@ -27,7 +25,7 @@ public class CarRentalService {
         } 
     }
     
-    public Car getCar(String vin) {
+    public Car getCarByVin(String vin) {
         return new Car();
     }
 }
