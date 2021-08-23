@@ -1,12 +1,12 @@
 package com.example.carrentalprocessor.repository;
 
-import com.example.carrentalprocessor.table.AppUser;
+import com.example.carrentalprocessor.table.Permission;
 import org.springframework.data.cassandra.repository.AllowFiltering;
 import org.springframework.data.cassandra.repository.CassandraRepository;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends CassandraRepository<AppUser, Long> {
+public interface PermissionRepository extends CassandraRepository<Permission, Long> {
 
     @AllowFiltering
-    public AppUser findByUsername(String username);
+    public Permission findByName(String name);
 }
